@@ -1,0 +1,1 @@
+function getNextSiblings(elem, filter) {var sibs = [];while (elem = elem.nextSibling) {if (!(elem.nodeType === 1)) continue; if (!filter || filter(elem)) sibs.push(elem);}return sibs;}
